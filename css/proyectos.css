@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.projects {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.project img {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+.project .details {
+    max-width: 600px;
+}
+.project .details h2 {
+    margin: 0;
+    font-size: 24px;
+}
