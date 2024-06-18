@@ -1,3 +1,8 @@
+html{   
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 /*ESTILOS GENERALES, HEADER, FOOTER,*/
 
 *{
@@ -44,6 +49,9 @@ header {
     /*-------------hamburguesa-------------------*/
 
 @media screen and (max-width: 550px) {
+    .iconobarra{
+        display: none;
+    }
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -53,12 +61,16 @@ header {
         cursor: pointer;
     }
 
+    .abrir-menu:hover, .cerrar-menu:hover{
+        background-color: transparent;
+    }
     .abrir-menu {
-        color: #1c1c1c;
+        color:white;
     }
 
     .cerrar-menu {
         color: #ececec;
+        font-size: 1.5rem;
     }
 
     .nav {
@@ -67,7 +79,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: end;
-        gap: 1rem;
+        gap: 2rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -75,6 +87,7 @@ header {
         background-color: #1c1c1c;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 999;
     }
 
     .nav.visible {
@@ -84,15 +97,101 @@ header {
     
     .nav-list {
         flex-direction: column;
+        gap: 5vh;
         align-items: end;
     }
-
-    .nav-list li a {
-        color: #ecececec;
+    .nav-list li a:hover {
+        color: lightskyblue;
+        font-size: 1.1rem;
+    }
+    .nav li{
+        align-items: center;
+    }
+    .nav li a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        transition: 1s ease-out;
+        white-space: nowrap;
+    }
+    
+    
+    .nav li a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 3px;
+        transform-origin: right;
+        transform: scaleX(0);
+        background-color: black;
+        transition: 0.7s ease;
+    }
+    
+    
+    .nav li a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+        background-color: lightskyblue;
     }
 }
 
-/*footer*/
-footer{
 
+/* Footer */
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #111;
+    position: relative;
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div-footer div {
+    margin: 10px;
+}
+
+
+.titulo-redes {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: lightseagreen;
+    transition: color 0.3s;
+}
+
+.titulo-redes:hover {
+    color: #fff;
+}
+
+.redes div {
+    font-size: 1.1em;
+    margin: 5px 0;
+    cursor: pointer;
+    color: lightskyblue;
+    transition: color 0.3s;
+}
+
+.redes div:hover {
+    color: #fff; 
+}
+
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .div-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes {
+        text-align: center;
+    }
 }

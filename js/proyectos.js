@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('data.xml')
+    fetch('xml/proyectos.xml')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciclos ~ IES Haría</title>
 
+
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
 <body>
     <!-- Inicio Header -->
     <header>
-        <img class="logo" src="./img/logo.png" alt="Logo">
+        <img class="logo" src="/img/logos/logoharia.png" alt="Logo">
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
@@ -27,28 +28,655 @@
                 <li class="iconobarra"><a href="#"><i class="bi bi-dash-lg"></i></a></li>
                 <li><a href="/html/ciclos.html">Ciclos</a></li>
                 <li class="iconobarra"><a href="#"><i class="bi bi-dash-lg"></i></a></li>
-                <li><a href="/html/proyectos.html">Proyectos</a></li>
+                <li><a href="/html/index.html#nav-proyectos">Proyectos</a></li>
                 <li class="iconobarra"><a href="#"><i class="bi bi-dash-lg"></i></a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/html/index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!-- Fin Header -->
 
     <main>
-        <div class="div-ciclos">
+        <div class="div-ciclos" id="menu">
             <ul class="lista-ciclos">
-                <li class="ciclos"><a href="/html/ciclos.html#fpbasica">FP Básica</a></li>
-                <li class="ciclos"><a href="/html/ciclos.html#fpmedia">FP Media</a></li>
-                <li class="ciclos"><a href="/html/ciclos.html#fpsuperior">FP Superior</a></li>
+                <li class="ciclos" id="fpbasica"><a href="/html/ciclos.html#fpbasicainfo">FP Básica</a></li>
+                <li  class="responsive" id="fpbasica"><a href="/html/ciclos.html#fpbasicainfo">FPB</a></li>
+                <li class="ciclos" id="fpmedia"><a href="/html/ciclos.html#fpmediainfo">FP Media</a></li>
+                <li class="responsive" id="fpmedia"><a href="/html/ciclos.html#fpmediainfo">FPM</a></li>
+                <li class="ciclos" id="fpsuperior"><a href="/html/ciclos.html#fpsuperiorinfo">FP Superior</a></li>
+                <li  class="responsive" id="fpsuperior"><a href="/html/ciclos.html#fpsuperiorinfo">FPS</a></li>
+                
             </ul>
         </div>
-        <div class="info-fp-basica">
-            <h2>FP BASICA</h2>
+        <div class="fp-content" id="fpbasicainfo">
+            <div class="info-fp" class="info-fp-basica">
+                <div class="infobasica">
+                    <h1 class="titulo">FP BASICA</h1>
+                    <ul class="informacionFP">
+                        <li class="despegableInfo">
+                            <h3 class="subtitulosFP">
+                                Requisitos de acceso a FP Básica
+                            </h3>
+                        </li>
+                        <li><p class="contenidosubtitulosFP">Tener cumplidos quince años, o cumplirlos durante el año natural en curso. Haber cursado 3º de ESO, o excepcionalmente haber cursado el segundo curso de la Educación Secundaria Obligatoria. Y la propuesta del equipo docente.</p></li>
+                    </ul>
+                    <li><h3 class="subtitulosFP"> Duración.</h3></li>
+                    <li class="contenidosubtitulosFP">Los ciclos tendrán 2 años de duración. Los alumnos podrán permanecer cursando un ciclo de Formación Profesional Básica durante un máximo de cuatro años.</li>
+
+                    <li><h3 class="subtitulosFP">Titulación.</h3></li>
+                    <li class="contenidosubtitulosFP"> Recibirán el título Profesional Básico correspondiente.</li>
+                        
+                    <li><h3 class="subtitulosFP">Objetivos</h3></li>
+                    <li class="contenidosubtitulosFP"> Los alumnos y alumnas que superen un ciclo formativo de grado básico recibirán el título de Graduado en Educación Secundaria Obligatoria..</li>
+                </div>
+                <div class=años>
+                    <div class=primeraño>
+                        <h2>-1ºAÑO</h2>
+                    </div>
+                    <div class="todoslosmodulos">
+                        <h2 class="tituloMODULOSIZQ">MODULOS</h2>
+                        <nav>
+                            <div class="tarjetas">
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Ciencias Aplicadas I</h2>
+                                        </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/basica/1ºaño/person_with_graphics copy.svg" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Comunicacion y Sociedad</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/basica/1ºaño/Icono_Que_son.svg" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr2')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Equipos eléctricos y electrónicos</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/basica/1ºaño/tl.webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr3')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Instalacion y mantenimiento de redes para transmisión de datos</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/basica/1ºaño/tl (4).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr4')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                        </nav>
+                    </div>
+                    <div class="datos-modulo hidden" id="pr1">
+                        <img src="/img/modulos/basica/1ºaño/person_with_graphics copy.svg" alt="">
+                        <div>
+                            <h1>Ciencias Aplicadas I y II</h1>
+                            <p>Info</p>
+                            <p class="bold">Horas:215</p>
+                            <a onclick="mostrarmodulo('quitar')"><img src="/img/volver.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="datos-modulo hidden" id="pr2">
+                        <img src="/img/modulos/basica/1ºaño/Icono_Que_son.svg" alt="">
+                        <div>
+                            <h1>Comunicacion y Sociedad</h1>
+                            <p>Info</p>
+                            <p class="bold">Horas:215</p>
+                            <a onclick="mostrarmodulo('quitar')"><img src="/img/volver.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="datos-modulo hidden" id="pr3">
+                        <img src="/img/modulos/basica/1ºaño/tl.webp" alt="">
+                        <div>
+                            <h1>Equipos electrónicos y eléctricos</h1>
+                            <p>Info</p>
+                            <p class="bold">Horas:215</p>
+                            <a onclick="mostrarmodulo('quitar')"><img src="/img/volver.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="datos-modulo hidden" id="pr4"> 
+                        <img src="/img/modulos/basica/1ºaño/tl (4).webp" alt="">
+                        <div>
+                            <h1>Instalacion y mantenimiento de redes para transmision de datos</h1>
+                            <p>Info</p>
+                            <p class="bold">Horas:215</p>
+                            <a onclick="mostrarmodulo('quitar')"><img src="/img/volver.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="datos-modulo hidden" id="pr6">
+                        <img src="/img/modulos/f.png" alt="">
+                        <div>
+                            <h1>Formación en centros de trabajo</h1>
+                            <p>Vamos a estar 2 meses y medio trabajando en empresas para obtener experiencia laboral.</p>
+                            <p class="bold">Formación profesional: Básica, Medio, Superior</p>
+                            <a onclick="mostrarmodulo('quitar')"><img src="/img/volver.png" alt=""></a>
+                        </div>
+                    </div>
+                <div class=segundoaño>
+                    <h2>-2ºAÑO</h2>
+                </div>
+                <div class="todoslosmodulos">
+                    <h2 class="tituloMODULOSDER">MODULOS</h2>
+                    <nav>
+                        <div class="tarjetas">
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Montaje y mantenimiento de sistemas y componentes informáticos</h2>
+                                    </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/basica/2ºaño/tl (1).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Operaciones auxiliares para la configuracion y la explotacion</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/basica/2ºaño/tl (3).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Formacion en centros de trabajo</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/basica/2ºaño/ilustracion-practicas-fct.svg" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta" onclick="mostrarmodulo('')">
+                                    <div class="delante">
+                                        <h2>Comunicacion y Sociedad II</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/basica/2ºaño/Icono_Que_son.svg" alt="">
+                                        <br>
+                                        <button>Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Ciencias Aplicadas II</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/basica/2ºaño/person_with_graphics.svg" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                    </nav>
+                </div>
+                </div>
+            </div>
         </div>
+    </nav>
+        <div class="fp-content" id="fpmediainfo">
+            <div class="info-fp" class="info-fp-media">
+                <div class="infomedia">
+                    <h1 class="titulo">FP MEDIA</h1>
+                    <ul class="informacionFP">
+                        <li class="despegableInfo">
+                            <h3 class="subtitulosFP">
+                                Requisitos de acceso a FP Media
+                            </h3>
+                        </li>
+                        <li><p class="contenidosubtitulosFP">Para entrar en un ciclo medio de SMR (Sistemas Microinformáticos y Redes) es necesario haber obtenido el título de FP Básica o un Título de Graduado/a en Educación Secundaria Obligatoria.</p></li>
+                    </ul>
+                    <li><h3 class="subtitulosFP"> Duración.</h3></li>
+                    <li class="contenidosubtitulosFP">Los ciclos tendrán 2 años de duración. 
+
+                    <li><h3 class="subtitulosFP">Titulación.</h3></li>
+                    <li class="contenidosubtitulosFP"> Recibirán el título Profesional Medio correspondiente.</li>
+                        
+                    <li><h3 class="subtitulosFP">Objetivo.</h3></li>
+                    <li class="contenidosubtitulosFP"> Este curso cubre la instalación y configuración de software y redes locales, administración de servicios y dispositivos compartidos, montaje de equipos informáticos, gestión logística, replanteamiento de redes, recuperación de datos, y elaboración de documentación técnica y presupuestos.</li>
+                        </div>
+                <div class=años>
+                    <div class=primeraño>
+                        <h2>-1ºAÑO</h2>
+                    </div>
+                    <div class="todoslosmodulos">
+                        <h2 class="tituloMODULOSIZQ">MODULOS</h2>
+                        <nav>
+                            <div class="tarjetas">
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Redes Locales</h2>
+                                        </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/tl (5).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Sistemas Operativos Monopuestos</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/e3433bd8-3444-4b22-8bc2-42bfb8432bf1.png" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Aplicaciones Ofimáticas</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/tl (6).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Montaje y mantenimiento de equipos</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/tl (1) copy.webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Formacion y Orientacion Laboral</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/ilustracion-practicas-fct copy.svg" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </nav>
+                    </div>
+                <div class=segundoaño>
+                    <h2>-2ºAÑO</h2>
+                </div>
+                <div class="todoslosmodulos">
+                    <h2 class="tituloMODULOSDER">MODULOS</h2>
+                    <nav>
+                <div class="todoslosmodulos">
+                    <nav>
+                        <div class="tarjetas">
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Servicios en Red</h2>
+                                    </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (7).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Seguridad Informática</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (8).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Sistemas Operativos en Red</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (9).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Empresas e iniciativa Empresarial</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (10).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Aplicaciones Web</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (11).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Formación en Centro de trabajos</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/ilustracion-practicas-fct copy 2.svg" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div><div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Integracion</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/media/2ºaño/tl (12).webp" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </nav>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="fp-content" id="fpsuperiorinfo">
+            <div class="info-fp" class="info-fp-superior">
+                <div class="infosuperior">
+                    <h1 class="titulo">FP SUPERIOR</h1>
+                    <ul class="informacionFP">
+                        <li class="despegableInfo">
+                            <h3 class="subtitulosFP">
+                                Requisitos de acceso a FP Superior
+                            </h3>
+                        </li>
+                        <li><p class="contenidosubtitulosFP">Para entrar en un ciclo superior de Desarrollo de Aplicaciones Multiplataforma (DAM) es necesario haber obtenido el título de Bachillerato o un título de Grado Medio.</p></li>
+                    </ul>
+                    <li><h3 class="subtitulosFP"> Duración.</h3></li>
+                    <li class="contenidosubtitulosFP">Los ciclos tendrán 2 años de duración.
+
+                    <li><h3 class="subtitulosFP">Titulación.</h3></li>
+                    <li class="contenidosubtitulosFP"> Recibirán el título Profesional Superior correspondiente.</li>
+                        
+                    <li><h3 class="subtitulosFP">Objetivo.</h3></li>
+                    <li class="contenidosubtitulosFP"> El ciclo superior de DAM está diseñado para proporcionar a los estudiantes una formación completa en el desarrollo de aplicaciones multiplataforma, incluyendo la programación de aplicaciones, la creación de interfaces gráficas de usuario, el diseño de bases de datos, la gestión de proyectos, el desarrollo de aplicaciones móviles, la seguridad informática y otros temas relacionados.</li>
+                    </div>
+                <div class=años>
+                    <div class=primeraño>
+                        <h2>-1ºAÑO</h2>
+                    </div>
+                    <div class="todoslosmodulos">
+                        <h2 class="tituloMODULOSIZQ">MODULOS</h2>
+                        <nav>
+                            <div class="tarjetas">
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Sistemás Informáticos</h2>
+                                        </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/superior/1ºaño/tl (13).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Base de Datos</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/superior/1ºaño/t.webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Programación</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/superior/1ºaño/tl (14).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Lenguaje de Marcas</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/2ºaño/tl (11).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Entorno de Desarollo</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/superior/1ºaño/tl (15).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Formación y orientació Laboral</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/media/1ºaño/ilustracion-practicas-fct copy.svg" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div><div>
+                                    <div class="tarjeta">
+                                        <div class="delante">
+                                            <h2>Inglés</h2>
+                                            </div>
+                                        <div class="detras">
+                                            <img class="logosimg" src="/img/modulos/superior/1ºaño/tl (16).webp" alt="">
+                                            <br>
+                                            <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </nav>
+                    </div>
+                <div class=segundoaño>
+                    <h2>-2ºAÑO</h2>
+                </div>
+                <div class="todoslosmodulos">
+                    <h2 class="tituloMODULOSDER">MODULOS</h2>
+                    <nav>
+                        <div class="tarjetas">
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Acceso de datos</h2>
+                                    </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/ciencias.jpg" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Desarrollo de interfaces</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Programación multimedia y dispositivos móviles</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Programación de servicios y procesos</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Sistemas de gestión empresarial</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Desarrollo de aplicaicones multiplataforma</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Formación en dentros de trabajo</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tarjeta">
+                                    <div class="delante">
+                                        <h2>Empresa e iniciativa emprendedora</h2>
+                                        </div>
+                                    <div class="detras">
+                                        <img class="logosimg" src="/img/modulos/SUPERIOR/english.png" alt="">
+                                        <br>
+                                        <button onclick="mostrarmodulo('pr1')" onclick="mostrarModulo('quitar')"">Más Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </nav>
+                </div>
+                </div>
+            </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="div-footer">
+            <div class="redes"><h4 class="titulo-redes">Links de interés</h4>
+                <div>EVAGD</div>
+                <div>Instagram</div>
+                <div>Facebook</div>
+                <div>Planeate</div>
+                <div>Gobierno de Canarias</div>
+            </div>
+            <div class="direccion">
+                <div class="redes">
+                    <h4 class="titulo-redes">Direccion</h4>
+                    <div>Santiago Noda, Haría, Las Palmas, España</div>
+        </div>
+        
+    </footer>
+    <script src="/js/ciclos.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

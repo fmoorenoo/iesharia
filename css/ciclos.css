@@ -1,28 +1,91 @@
 /*navegacion tipos de ciclos*/
+*{
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
 .ciclos{
     font-weight: 800;
     font-family:"Lexend Mega", sans-serif;
 }
-.div-ciclos{
+.div-ciclos {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 3px lightskyblue;
+    transition: top 0.3s ease;
+    text-align: center;
 }
-.lista-ciclos{
+/*responsive para moviles*/
+.responsive{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .div-ciclos {
+        display: flex;
+        height: 40px; 
+    }
+
+    .lista-ciclos {
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: center; 
+        width: 100%;
+    }
+    .lista-ciclos li a {
+        font-size: 1rem;
+    }
+    .ciclos{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+    }
+    .div-tarjeta{
+        background-color: lightskyblue;
+        width: max-content;
+    }
+    .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav{
+        z-index: 999;
+    }
+}
+/*menu pegajoso*/
+.sticky{
+    top:0;
+    z-index: 990;
+}
+/*nav de ciclos*/
+.lista-ciclos {
     list-style-type: none;
     display: flex;
-    gap: 10rem;
-}
-.lista-ciclos{
-    height: 100%;
-    width: 100%;
-    padding: 50px;
     justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
+.lista-ciclos li{
+    align-items: center
+}
 .lista-ciclos li a{
     position: relative;
     color: black;
     text-decoration: none;
+    transition: 1s ease-out;
+    white-space: nowrap;
+}
+.lista-ciclos li a:hover{
+    color: lightskyblue;
 }
 
 
@@ -35,9 +98,8 @@
     height: 3px;
     transform-origin: left;
     transform: scaleX(0);
-    border-radius: 5px;
     background-color: black;
-    transition: 1s ease;
+    transition: 0.7s ease;
 }
 
 
@@ -46,6 +108,208 @@
     transform-origin: right;
     background-color: lightskyblue;
 }
+.colorFpBasica ul li a{
+    color: lightskyblue;
+}
+.colorFpMedia li a{
+    color: lightskyblue;
+}
+.colorFpSuperior li a{
+    color: lightskyblue;
 
-
+}
 /*contenido-informacion*/
+.info-fp-basica{
+    background-color: #05833e;
+    border: solid 3px #01AF50;
+}
+.titulo{
+    margin-top: 40px;
+    width: 100vw;
+    border-top: solid 2px grey;
+    border-bottom: solid 2px grey;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.años{
+    margin-top:5vh;
+    margin-bottom: 15vh;
+}
+.fp-content{
+    display: flex;
+    flex-direction: column;
+    padding:3%;
+}
+.modulos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.modulos-li{
+    padding:25px;
+}
+.info-fp h1{
+    color: black;
+    margin-top: 100px;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+
+/*modulos*/
+.primeraño{
+    display: flex;
+    justify-content: start;
+}
+.segundoaño{
+    display: flex;
+    justify-content: end;
+}
+.tituloMODULOSIZQ{
+    display: flex;
+    justify-content: start;
+}
+.tituloMODULOSDER{
+    display: flex;
+    justify-content: end;
+}
+
+.logosimg {
+    max-width: fit-content;
+    max-height: fit-content;
+    width: 100px;
+    height: 100px;
+
+}
+.titulo-bajo-tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tarjetas {
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+.tarjeta:hover{
+    transform: rotateX(90deg) rotateY(90deg) rotateZ('angle');
+    scale: 1.1;
+}
+  
+.tarjeta {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+  
+.delante, .detras {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #424242;
+}
+  
+.delante {
+    background-color: #fff;
+}
+  
+.detras {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    padding: 5px;
+    background-color: lightskyblue;
+}
+.detras button{
+    color: black;
+    background-color: white;
+}
+
+.delante h2 {
+    font-size: 0.8rem;
+    text-align: center;
+}
+  
+.tarjetas div:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+.en-negrita-las-horas{
+    color: lightskyblue;
+}
+
+
+/*mostrar modulos*/
+
+.datos-modulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(169, 189, 233);
+    background-color: rgb(204, 229, 238);
+    width:800px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.726);
+    padding: 20px;
+    gap: 30px;
+}
+
+.datos-modulo > img {
+    height: 120px;
+    border-radius: 20px;
+    border: solid 3px rgb(255, 224, 183);
+}
+.datos-modulo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.datos-modulo div h1 {
+    font-size: 1rem;
+}
+
+.datos-modulo div p {
+    font-size: .8rem;
+    text-align: center;
+    align-items: center;
+}
+
+.datos-modulo a img {
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+}
+
+.datos-modulo a img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
